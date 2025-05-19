@@ -14,6 +14,7 @@ ECOZAR is a standalone digital tour guide application tailored for a solar-charg
 
 ## System Architecture
 
+```plaintext
 ┌──────────────────────────────┐       ┌───────────────────────────┐
 │       Beelink S12 Mini PC    │       │       ESP32 Module        │
 │ (Electron Main + React UI)   │◀────▶│ (ADS1115, ACS758, DS18B20)│
@@ -24,6 +25,10 @@ ECOZAR is a standalone digital tour guide application tailored for a solar-charg
        ┌──────────────────────────┐
        │  VK-162 USB GPS Receiver │
        └──────────────────────────┘
+
+ ```
+
+
 Electron Main Process: Manages IPC, serial comms (GPS, sensor data), logging, and window management.
 
 React Renderer: Renders UI for driver/passenger, including map, controls, and multimedia content.
