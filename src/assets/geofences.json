@@ -1,0 +1,389 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"coverage": "Clinic, MRO Facility, GYM",
+				"highlightGroups": [
+					{
+						"name": "MRO Facility",
+						"images": ["mro.jpg"],
+						"highlight": "A maintenance facility that performs routine inspections and major overhauls to ensure aircraft safety and efficiency.",
+            "narration":["mro.mp3"]
+					},
+					{
+						"name": "GYM",
+						"images": ["gym.jpg", "gym-2.jpg"],
+						"highlight": "A fitness center equipped for weight training, group classes, and sports activities.",
+						"narration": ["gym.mp3"]
+					},
+					{
+						"name": "Clinic",
+						"images": ["clinic.jpg"],
+						"highlight": "Provides accessible healthcare for students and staff, offering basic medical care, first aid, and health support on campus.",
+						"narration": ["clinic.mp3"]
+					}
+				]
+			},
+			"geometry": {
+				"coordinates": [
+					[
+						[120.58277035553357, 16.054036956586316],
+						[120.58280171365419, 16.053751831071608],
+						[120.58375934243111, 16.053863099613963],
+						[120.5837207478204, 16.054131998333446],
+						[120.58277035553357, 16.054036956586316]
+					]
+				],
+				"type": "Polygon"
+			},
+			"id": 0
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"coverage": "Gate 2",
+				"highlightGroups": [
+					{
+						"name": "Main Gate",
+						"images": ["gate2.jpg"],
+						"highlight": "Primary gate for students and staff use.",
+						"narration": ["gate2.mp3"]
+					}
+				]
+			},
+			"geometry": {
+				"coordinates": [
+					[
+						[120.58378828838909, 16.05403463849487],
+						[120.58380758569439, 16.053863099613963],
+						[120.5841259912325, 16.053890916739803],
+						[120.5840994574371, 16.054067091778933],
+						[120.58378828838909, 16.05403463849487]
+					]
+				],
+				"type": "Polygon"
+			},
+			"id": 1
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"coverage": "J. Calvo Bldg., A. Arnaiz Bldg. and extension, SHS Bldg.",
+				"highlightGroups": [
+					{
+						"name": "J. Calvo Building",
+						"images": ["jcalvo.jpg"],
+						"highlight": "An avionics department with emergency slide training and main aircraft garage.",
+						"narration": ["jcalvo.mp3"]
+					},
+					{
+						"name": "A. Arnaiz Building",
+						"images": ["arnaiz.jpg"],
+						"highlight": "This facility offers rooms for students and administrative staff, covering departments such as DSA, marketing, drawing, computing, and includes a science laboratory for various activities.",
+						"narration": ["arnaiz.mp3"]
+					},
+					{
+						"name": "SHS Building",
+						"images": ["shs.jpg"],
+						"highlight": "The Senior High School Building houses the Senior High School Department.",
+						"narration": ["shs.mp3"]
+					}
+				]
+			},
+			"geometry": {
+				"coordinates": [
+					[
+						[120.5837896176069, 16.053808260863946],
+						[120.58391785030358, 16.053059265380924],
+						[120.58430254839374, 16.053081671269652],
+						[120.58419596537277, 16.053845070398864],
+						[120.5837896176069, 16.053808260863946]
+					]
+				],
+				"type": "Polygon"
+			},
+			"id": 2
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"coverage": "ALSIM, Accounting and Registrar's Office",
+				"highlightGroups": [
+					{
+						"name": "ALSIM",
+						"images": [
+              "alsim-2.jpg",
+							"alsim.jpg"
+						],
+						"highlight": "An advanced simulator for flight training, where student pilots practice maneuvers and emergency procedures.",
+						"narration": ["ALSIM.mp3"]
+					},
+					{
+						"name": "Accounting Office",
+						"images": ["registrar-accounting.jpg"],
+						"highlight": "An office that handles financial matters, including tuition fees, and student accounts.",
+						"narration": ["accounting.mp3"]
+					},
+					{
+						"name": "Registrar's Office",
+						"images": ["registrar-accounting.jpg"],
+						"highlight": "An office that manages student records, including enrollment, grades, and other academic information.",
+						"narration": ["registrar.mp3"]
+					}
+				]
+			},
+			"geometry": {
+				"coordinates": [
+					[
+						[120.58382611346099, 16.053308257096006],
+						[120.58333150162969, 16.053277849138567],
+						[120.58336480882372, 16.05304738867561],
+						[120.58385942065507, 16.053097001714875],
+						[120.58382611346099, 16.053308257096006]
+					]
+				],
+				"type": "Polygon"
+			},
+			"id": 3
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"coverage": "Clubhouse, Pool, Residence Hall 3",
+				"highlightGroups": [
+					{
+						"name": "Clubhouse",
+						"images": ["clubhouse.jpg"],
+						"highlight": "A recreational facility where students can gather for Bible studies, relaxation, and social activities like mind games and free coffee. On Sundays, it transforms into a church for worship and community gatherings.",
+						"narration": ["clubhouse.mp3"]
+					},
+					{
+						"name": "Residence Hall 3",
+						"images": ["residencehalls.jpg"],
+						"highlight": "The residence halls that provides accommodation for students and visitors.",
+						"narration": ["residencehall-3.mp3"]
+					}
+				]
+			},
+			"geometry": {
+				"coordinates": [
+					[
+						[120.58337871221545, 16.05300693824151],
+						[120.58341316762596, 16.052696514256212],
+						[120.58457388426865, 16.052663402335895],
+						[120.58454158232286, 16.05307316196142],
+						[120.58337871221545, 16.05300693824151]
+					]
+				],
+				"type": "Polygon"
+			},
+			"id": 4
+		},
+		{
+      "type": "Feature",
+      "properties": {
+        "coverage": "Residence Hall 4, Residence Hall 2",
+        "highlightGroups": [
+          {
+						"name": "Residence Hall 4 and 2",
+						"images": ["residencehalls.jpg"],
+						"highlight": "Provides accommodation for students and visitors with modern facilities.",
+						"narration": ["residencehall-4-2.mp3"]
+					}
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [120.58365273173263, 16.052620864699023],
+            [120.58362578384038, 16.052402177592754],
+            [120.58364973752174, 16.052085656354706],
+            [120.58426055639586, 16.052094288758795],
+            [120.58423061429414, 16.052594967554157],
+            [120.58365273173263, 16.052620864699023]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 5
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coverage": "MAB Grounds, Cafeteria",
+        "highlightGroups": [
+          {
+						"name": "Main Academic Building",
+						"images": ["mab.jpg"],
+						"highlight": "The main building that houses the administration, classrooms, and the library.",
+						"narration": ["mabgrounds-cafeteria.mp3"]
+					},
+          {
+            "name": "Cafeteria",
+            "images": ["cafeteria.jpg"],
+            "highlight": "A dining facility that serves meals and snacks for students and staff."
+          }
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [120.58302095338797, 16.052215142376554],
+            [120.58357188805735, 16.052289956484145],
+            [120.58354194595569, 16.052606477396708],
+            [120.5833622933456, 16.05257482532805],
+            [120.58331738019382, 16.05301219892182],
+            [120.58292813287204, 16.052980546917624],
+            [120.58302095338797, 16.052215142376554]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 6
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coverage": "Airport Terminal",
+        "highlightGroups": [
+          {
+						"name": "Terminal Building",
+						"images": [
+							"terminal.jpg",
+							"terminal-2.jpg"
+						],
+						"highlight": "A building facilitating passenger processing with check-in, security, baggage, and boarding areas.",
+						"narration": ["terminal.mp3"]
+					}
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [120.58231132557898, 16.053000689102717],
+            [120.58238620988072, 16.052428099990152],
+            [120.58291319087022, 16.052525933712204],
+            [120.58283534140588, 16.053055385965735],
+            [120.58231132557898, 16.053000689102717]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 7
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coverage": "Sabsaban",
+        "highlightGroups": [
+          {
+						"name": "Sabsaban Dining Area",
+						"images": ["sabsaban.jpg"],
+						"highlight": "A self-service dining area where individuals can choose from a variety of pre-prepared meals, snacks, and beverages in a casual, social setting.",
+						"narration": ["sabsaban.mp3"]
+					}
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [120.58242513461369, 16.052353285934515],
+            [120.58245507671529, 16.052091436518353],
+            [120.58294313297193, 16.052174883072965],
+            [120.58289223139838, 16.0524338549164],
+            [120.58242513461369, 16.052353285934515]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 8
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coverage": "Multipurpose Hall",
+        "highlightGroups": [
+          {
+						"name": "Multipurpose Facility",
+						"images": ["multipurpose.jpg"],
+						"highlight": "This hall serves as a flexible space for assemblies, sports events, performances, and meetings, accommodating both educational and recreational activities for students and staff.",
+						"narration": ["mro.mp3"]
+					}
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [120.58309583768971, 16.052163373205445],
+            [120.58314075084297, 16.051812321927045],
+            [120.58341322396745, 16.052031009681087],
+            [120.58338927028615, 16.052203657738858],
+            [120.58309583768971, 16.052163373205445]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 9
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coverage": "Parking Area",
+        "highlightGroups": [
+          {
+						"name": "Main Parking Lot",
+						"images": [""],
+						"highlight": "A designated area for vehicles to park, providing convenience and accessibility for students and staff.",
+						"narration": ["parking.mp3"]
+					}
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [120.5835830718147, 16.05204348839473],
+            [120.58308393679562, 16.05175416088491],
+            [120.58306016846132, 16.05186075527986],
+            [120.58276702567235, 16.05179223031824],
+            [120.58282644650888, 16.051502902442493],
+            [120.58320673985673, 16.05110697940593],
+            [120.58391582849407, 16.051586655291842],
+            [120.58388413738174, 16.051993998193325],
+            [120.5835830718147, 16.05204348839473]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 10
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "coverage": "Gate 1 Road",
+        "highlightGroups": [
+          {
+						"name": "Main Vehicle Entrance",
+						"images": ["gate1.jpg"],
+						"highlight": "Primary gate for vehicles and visitors, providing secure access to the campus.",
+						"narration": ["gate1.mp3"]
+					}
+        ]
+      },
+      "geometry": {
+        "coordinates": [
+          [
+            [120.58268737388664, 16.051731486491335],
+            [120.58248679378875, 16.051712210493562],
+            [120.58268336228565, 16.050027481083887],
+            [120.58289196558542, 16.05005061247668],
+            [120.58268737388664, 16.051731486491335]
+          ]
+        ],
+        "type": "Polygon"
+      },
+      "id": 11
+    }
+  ]
+}

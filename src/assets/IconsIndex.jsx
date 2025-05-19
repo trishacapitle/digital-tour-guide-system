@@ -1,0 +1,15 @@
+export { default as EcoIcon } from "./ECO-icon.svg";
+export { default as TourIcon } from "./TOUR-icon.svg";
+export { default as LEDIconOff } from "./LEDsmall-inactive.svg";
+export { default as LEDIconOn } from "./LEDsmall-active.svg";
+export { default as BeaconIconOff } from "./beacon-inactive.svg";
+export { default as BeaconIconOn } from "./beacon-active.svg";
+export { default as SolarMeter } from "./pie-chart-placeholder.svg";
+export { default as VehicleImg } from "./vehicle-3d.png";
+export { default as BatteryGraphic } from "./battery-graphic.svg";
+export { default as Glow } from "./glow.svg";
+export { default as ToggleOn } from "./Toggle-On.svg";
+export { default as ToggleOff } from "./Toggle-Off.svg";
+export { default as Logo } from "./logo-big.svg"
+export { default as EcoMarker } from "./eco-marker.svg";
+export { default as TourMarker } from "./tour-marker.svg";

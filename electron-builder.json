@@ -1,0 +1,7 @@
+{
+    "appId": "com.ash-dev.ecozar-software",
+    "files": ["dist-react"],
+    "win": {
+        "target": ["portable", "msi"]
+    }
+}

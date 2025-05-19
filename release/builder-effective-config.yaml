@@ -1,0 +1,15 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.ecozar.shuttle
+productName: Ecozar Shuttle System
+files:
+  - filter:
+      - dist-react/**/*
+      - electron/**/*
+      - package.json
+extraMetadata:
+  main: electron/main.js
+win:
+  target: nsis
+electronVersion: 34.0.0
