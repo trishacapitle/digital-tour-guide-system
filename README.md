@@ -31,15 +31,25 @@ React Renderer: Renders UI for driver/passenger, including map, controls, and mu
 Preload Script: Exposes safe IPC channels (contextBridge) for data flow between processes.
 
 ## Technologies & Dependencies
+
 Frameworks: Electron, Vite, React (JavaScript)
+
 Styling: Tailwind CSS
+
 State Management: React Context API
+
 Hardware Interfaces: Serialport, Node-GPS parsing, OneWire (DS18B20), ADS1115 ADC, ACS758 sensors
+
 Voice Synth: ElevenLabs
+
 Mapping: MapLibreGL
 
 ## Usage
+
 Connect Hardware: Attach GPS and ESP32 modules via USB.
+
 Select Mode: On the driver’s panel, choose Tour Mode to activate narration or Normal Mode for standard driving.
+
 Monitor Dashboard: View live sensor metrics (SOC, solar efficiency) and route map on passenger screen.
+
 Review Logs: Hourly logs in logs/hourly/ and daily summaries in logs/daily/.
