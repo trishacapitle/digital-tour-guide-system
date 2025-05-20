@@ -56,5 +56,3 @@ Connect Hardware: Attach GPS and ESP32 modules via USB.
 Select Mode: On the driver’s panel, choose Tour Mode to activate narration or Normal Mode for standard driving.
 
 Monitor Dashboard: View live sensor metrics (SOC, solar efficiency) and route map on passenger screen.
-
-Review Logs: Hourly logs in logs/hourly/ and daily summaries in logs/daily/.
