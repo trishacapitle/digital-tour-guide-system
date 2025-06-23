@@ -48,11 +48,3 @@ Hardware Interfaces: Serialport, Node-GPS parsing, OneWire (DS18B20), ADS1115 AD
 Voice Synth: ElevenLabs
 
 Mapping: MapLibreGL
-
-## Usage
-
-Connect Hardware: Attach GPS and ESP32 modules via USB.
-
-Select Mode: On the driver’s panel, choose Tour Mode to activate narration or Normal Mode for standard driving.
-
-Monitor Dashboard: View live sensor metrics (SOC, solar efficiency) and route map on passenger screen.
