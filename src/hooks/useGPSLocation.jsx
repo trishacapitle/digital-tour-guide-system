@@ -13,22 +13,17 @@ export const useGPSLocation = () => {
 			return;
 		}
 
-		// // 1) Send the default coords right away so main process can run geofence
-		// ipc.send("gps-update", location);
-
-		// 2) Subscribe to live GPS updates
 		const cleanup = ipc.onGPSUpdate((data) => {
 			console.log("GPS Update Received:", data);
 			setLocation(data);
 
-			// Re-send every time coords change
 			ipc.send("gps-update", data);
 		});
 
 		return () => {
 			if (typeof cleanup === "function") cleanup();
 		};
-	}, []); // run only once on mount
+	}, []);
 
 	return location;
 };

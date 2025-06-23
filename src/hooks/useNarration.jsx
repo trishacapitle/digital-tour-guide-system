@@ -14,14 +14,11 @@ export const useNarration = () => {
 		const cleanup = ipc.onPlayNarration((files) => {
 			console.log("[useNarration] play-narration files:", files);
 
-			// 1) Stop any currently playing audio
 			audios.current.forEach((a) => {
 				a.pause();
 				a.currentTime = 0;
 			});
 
-			// 2) Build new Audio objects with correct URLs
-			//    Using Vite’s import.meta.url to resolve assets under src/assets
 			const newAudios = files.map((filename) => {
 				const url = new URL(`../assets/narrations/${filename}`, import.meta.url)
 					.href;
@@ -29,7 +26,6 @@ export const useNarration = () => {
 				return new Audio(url);
 			});
 
-			// 3) Wire them up in sequence
 			newAudios.forEach((audio, idx) => {
 				if (idx > 0) {
 					newAudios[idx - 1].addEventListener("ended", () => {
@@ -43,7 +39,6 @@ export const useNarration = () => {
 
 			audios.current = newAudios;
 
-			// 4) Play the first one
 			if (audios.current[0]) {
 				console.log(
 					"[useNarration] playing first audio:",

@@ -11,7 +11,7 @@ const MapTilt = ({ lat, lng, mode }) => {
 	const markerRef = useRef(null);
 
 	useEffect(() => {
-		if (mapRef.current) return; // initialize only once
+		if (mapRef.current) return; 
 
 		const map = new maplibregl.Map({
 			container: mapContainerRef.current,
@@ -38,11 +38,6 @@ const MapTilt = ({ lat, lng, mode }) => {
 			.setLngLat([lng, lat])
 			.addTo(map);
 		markerRef.current = marker;
-
-		// const bounds = new maplibregl.LngLatBounds()
-		// 	.extend([lng - 0.002, lat - 0.002])
-		// 	.extend([lng + 0.002, lat + 0.002]);
-		// map.setMaxBounds(bounds);
 
 		map.on("load", () => {
 			const layers = map.getStyle().layers;
@@ -99,19 +94,16 @@ const MapTilt = ({ lat, lng, mode }) => {
 			el.style.width = `${size}px`;
 			el.style.height = `${size}px`;
 		});
-	}, []); // ← run once only
+	}, []);
 
 	useEffect(() => {
 		if (!mapRef.current || !markerRef.current) return;
 
-		// Update marker icon based on mode
 		const el = markerRef.current.getElement();
 		el.src = mode === "eco" ? EcoMarker : TourMarker;
 
-		// Update marker position
 		markerRef.current.setLngLat([lng, lat]);
 
-		// Optionally recenter the map (comment out if you don't want automatic recenter)
 		mapRef.current.setCenter([lng, lat]);
 	}, [lat, lng, mode]);
 

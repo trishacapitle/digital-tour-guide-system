@@ -12,13 +12,10 @@ const PassengerScreen = () => {
 	const { lat, lng } = useGPSLocation();
 	const currentGeofence = useGeofence();
 
-	// Slideshow state
 	const [currentIndex, setCurrentIndex] = useState(0);
 
-	// Pull out highlightGroups for this geofence (or empty array)
 	const highlightGroups = currentGeofence?.properties?.highlightGroups ?? [];
 
-	// Whenever we enter a new geofence or switch to Tour mode, reset & start cycling
 	useEffect(() => {
 		setCurrentIndex(0);
 
@@ -30,7 +27,6 @@ const PassengerScreen = () => {
 		}
 	}, [currentGeofence, mode, highlightGroups.length]);
 
-	// Pick the current highlight (or null)
 	const currentHighlight = highlightGroups[currentIndex] ?? null;
 
 	const handleSwitchToTour = () => {
@@ -77,7 +73,6 @@ const PassengerScreen = () => {
 							<MapTilt lat={lat} lng={lng} mode={mode} />
 						</div>
 						<div className="info-assist">
-							{/* Slideshow container */}
 							<div className="minimap w-[293px] h-[240px] mt-[10px] bg-[#272933] bg-opacity-70 rounded-lg backdrop-blur-xl flex items-center justify-center">
 								{currentHighlight ? (
 									<img
@@ -99,7 +94,6 @@ const PassengerScreen = () => {
 								)}
 							</div>
 
-							{/* Textual info */}
 							<div className="info-text w-[293px] h-fit mt-[10px] bg-[#272933] bg-opacity-70 rounded-lg backdrop-blur-xl p-4">
 								{currentHighlight ? (
 									<>

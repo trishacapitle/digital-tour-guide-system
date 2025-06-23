@@ -12,11 +12,9 @@ const Nav = () => {
 	const { lat, lng } = useGPSLocation();
 	const currentGeofence = useGeofence();
 
-	// Slideshow index & groups
 	const [index, setIndex] = useState(0);
 	const groups = currentGeofence?.properties?.highlightGroups || [];
 
-	// Whenever we get a new geofence or switch into TOUR, reset & start cycling
 	useEffect(() => {
 		setIndex(0);
 
@@ -38,14 +36,11 @@ const Nav = () => {
 			</div>
 
 			<div className="nav-content flex gap-5 justify-center z-20">
-				{/* Left: Big map */}
 				<div className="navigation-assist bg-[#272933] bg-opacity-70 rounded-lg w-[577px] h-[524px] mt-[10px]">
 					<MapTilt lat={lat} lng={lng} mode={mode} />
 				</div>
 
-				{/* Right: Info panel */}
 				<div className="info-assist">
-					{/* Mini-map or image slideshow */}
 					<div className="minimap w-[293px] h-[240px] mt-[10px] bg-[#272933] bg-opacity-70 rounded-lg backdrop-blur-xl flex items-center justify-center overflow-hidden">
 						{highlight ? (
 							<img
@@ -63,7 +58,6 @@ const Nav = () => {
 						)}
 					</div>
 
-					{/* Textual information */}
 					<div className="info-text w-[293px] h-auto mt-[10px] bg-[#272933] bg-opacity-70 rounded-lg backdrop-blur-xl p-4">
 						<p className="font-semibold text-xs text-white">
 							Current Coordinates:

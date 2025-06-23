@@ -11,24 +11,19 @@ const SecondWindow = () => {
 	const { mode } = useMode();
 	const currentGeofence = useGeofence();
 
-	// Slideshow state
 	const [highlightIndex, setHighlightIndex] = useState(0);
 	const [imageIndex, setImageIndex] = useState(0);
 
-	// Pull highlight groups for the current geofence
 	const highlightGroups = currentGeofence?.properties?.highlightGroups ?? [];
 
-	// Pick the current highlight group
 	const currentHighlight = highlightGroups[highlightIndex] ?? null;
 	const currentImages = currentHighlight?.images ?? [];
 
-	// Reset slideshow when geofence changes
 	useEffect(() => {
 		setHighlightIndex(0);
 		setImageIndex(0);
 	}, [currentGeofence]);
 
-	// Handle image slideshow inside a highlight
 	useEffect(() => {
 		if (mode === "tour" && currentImages.length > 1) {
 			const interval = setInterval(() => {
@@ -36,11 +31,10 @@ const SecondWindow = () => {
 					if (prev + 1 < currentImages.length) {
 						return prev + 1;
 					} else {
-						// If finished images, move to next highlight (if any)
 						if (highlightGroups.length > 1) {
 							setHighlightIndex((h) => (h + 1) % highlightGroups.length);
 						}
-						return 0; // Reset image index
+						return 0;
 					}
 				});
 			}, 5000);
@@ -55,18 +49,14 @@ const SecondWindow = () => {
 				<img src={Glow} alt="green glow effect" />
 			</div>
 
-			{/* Topbar */}
 			<Topbar size="large" />
 
 			<div className="nav-content flex gap-6 justify-center z-20 ml-4">
-				{/* Map */}
 				<div className="navigation-assist bg-[#272933] bg-opacity-70 rounded-lg w-[1264px] h-[968px] mt-4">
 					<MapTilt lat={lat} lng={lng} mode={mode} />
 				</div>
 
-				{/* Info & Slideshow */}
 				<div className="info-assist">
-					{/* Image Carousel */}
 					<div className="minimap w-[560px] h-[560px] mt-4 bg-[#272933] bg-opacity-70 rounded-lg backdrop-blur-xl flex items-center justify-center">
 						{currentHighlight && currentImages.length > 0 ? (
 							<img
@@ -88,7 +78,6 @@ const SecondWindow = () => {
 						)}
 					</div>
 
-					{/* Text Details */}
 					<div className="info-text w-[560px] h-fit mt-6 bg-[#272933] bg-opacity-70 rounded-lg backdrop-blur-xl p-6">
 						{currentHighlight ? (
 							<>

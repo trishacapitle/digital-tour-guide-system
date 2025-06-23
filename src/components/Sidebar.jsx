@@ -1,6 +1,5 @@
 import { useLocation, Link } from "react-router-dom";
 
-// Import all icons
 import menuActive from "../assets/menu-active.svg";
 import menuInactive from "../assets/menu-inactive.svg";
 import navActive from "../assets/nav-active.svg";

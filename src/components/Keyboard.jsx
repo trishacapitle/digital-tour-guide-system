@@ -4,7 +4,6 @@ const Keyboard = ({ onKeyPress }) => {
   const [isShift, setIsShift] = useState(false);
   const [isSymbols, setIsSymbols] = useState(false);
 
-  // Define the keyboard rows
   const firstRow = isSymbols ? ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "-", "="] : ["!", "@", "#", "$", "%", "^", "&", "*", "(", ")", "_", "+"];
   const secondRow = isShift ? ["Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "{", "}", "|"] : ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "[", "]", "\\"];
   const thirdRow = isShift ? ["A", "S", "D", "F", "G", "H", "J", "K", "L", ":", '"'] : ["a", "s", "d", "f", "g", "h", "j", "k", "l", ";", "'"];
@@ -16,8 +15,8 @@ const Keyboard = ({ onKeyPress }) => {
     } else if (key === "123") {
       setIsSymbols(!isSymbols);
     } else {
-      onKeyPress(key); // Pass the key press to the parent component
-      if (isShift) setIsShift(false); // Turn off shift after one use
+      onKeyPress(key);
+      if (isShift) setIsShift(false); 
     }
   };
 
