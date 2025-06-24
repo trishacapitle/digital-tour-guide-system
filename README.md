@@ -1,4 +1,4 @@
-# Digital Tour Guide System for a Modified Electric Vehicle
+![Project Cover](digital-tour-guide-system.jpg)
 
 ## Overview
 This is a standalone digital tour guide application tailored for a solar-charged e-vehicle operating within a campus environment. It delivers real-time location tracking, synchronized voice narration, and slideshow presentations, engaging passengers with automated tours of landmarks and points of interest.
